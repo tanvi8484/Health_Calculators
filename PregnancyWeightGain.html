@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Weight Gain Calculator</title>
+    <link rel="stylesheet" href="style13.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pregnancy Weight Gain Calculator</h1>
+        <p>Estimate the recommended weight gain during your pregnancy based on your pre-pregnancy BMI.</p>
+        
+        <label for="weight">Pre-pregnancy Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Weight in kg" required>
+        
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Height in cm" required>
+        
+        <button onclick="calculateWeightGain()">Calculate Weight Gain</button>
+        
+        <h2 id="result"></h2>
+        
+        <div class="info">
+            <h3>Weight Gain Recommendations:</h3>
+            <p>Weight gain during pregnancy is important for the health of both mother and baby. The recommended weight gain varies based on your pre-pregnancy BMI:</p>
+            <ul>
+                <li>Underweight (BMI < 18.5): 12.5 to 18 kg</li>
+                <li>Normal weight (BMI 18.5 - 24.9): 11.5 to 16 kg</li>
+                <li>Overweight (BMI 25 - 29.9): 7 to 11.5 kg</li>
+                <li>Obesity (BMI ≥ 30): 5 to 9 kg</li>
+            </ul>
+            <p>Always consult your healthcare provider for personalized recommendations.</p>
+        </div>
+    </div>
+
+    <script src="script13.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4a148c; /* Darker shade of maroon for the heading */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4a148c; /* Darker shade of maroon for labels */
+}
+
+input, select {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px;
+    border: 1px solid #e91e63; /* Pink border for input and select */
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d81b60; /* Pink button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+.info {
+    margin-top: 20px;
+    background: #e9ecef; /* Light gray background for info */
+    padding: 10px;
+    border-radius: 5px;
+}

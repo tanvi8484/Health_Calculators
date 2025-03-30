@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Calculators And Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#b6c7d5; /* Light blue background */
+        }
+        header {
+            background-color: #9b2d4d; /* Maroon header */
+            color: #fff; /* White text */
+            padding: 10px 10px ;
+            padding-bottom: 5px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            justify-content: center; /* Center the nav items */
+            margin-bottom: 10px;
+            width: 100%;
+            position: sticky; /* Make the nav sticky */
+            top: 0; /* Stick to the top */
+            background-color: #d21771; /* Semi-transparent white */
+            background-color: solid;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgb(117, 89, 108); /* Shadow for depth */
+            transition: background-color 0.3s; /* Transition for background color */
+        }
+        nav:hover {
+            background-color: rgb(180, 29, 102); /* Fully opaque on hover */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #faf8f9; /* Pink link color */
+            font-weight: bold;
+            transition: color 0.3s; /* Transition for link color */
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #e81396; /* Darker pink on hover */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #fff; /* White background for container */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #9b2d4d; /* Maroon footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h1 {
+            color: #ff4c81; /* Pink heading */
+        }
+        h2 {
+            color: #9b2d4d; /* Maroon subheading */
+        }
+        p {
+            line-height: 1.6;
+            color: #000000; /* Dark text for readability */
+        }
+        ul {
+            color: #000000; /* Dark text for lists */
+        }
+        h3 {
+            color: #ff4c81; /* Pink */
+        }
+        h4 {
+            color: #9b2d4d; /* Maroon */
+        }
+        img {
+            margin: 10px 10px 25px 25px;
+            transition: transform 0.3s; /* Animation for image */
+        }
+        img:hover {
+            transform: scale(1.1); /* Pop effect on hover */
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .about-image {
+            border-radius: 25px; /* Curved corners for the about image */
+            width: 500px;
+            height: 300px;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        section {
+            margin: 30px;
+        }
+        .benefits {
+            display: flex;
+            align-items: center;
+            margin: 20px 20px;
+            border: 3px solid #ff6f91; /* Pink border */
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #ffe6f2; /* Light pink background for benefits */
+            overflow: hidden;
+            display: inline-block;
+            width: 400px;
+            transition: transform 0.3s, background-color 0.3s; /* Animation for box */
+        }
+        .benefits:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            background-color: #ffccf2; /* Slightly darker pink on hover */
+        }
+        .benefits img {
+            border-radius: 15px; /* Curved corners for the benefit images */
+            width: 350px; /* Ensure the width is consistent */
+            height: 300px; /* Ensure the height is consistent */
+        }
+        .button {
+            display: inline-block; 
+            padding: 10px 120px; 
+            font-size: 16px; 
+            color: white;
+            background-color: #9b2d4d; /* Maroon button */
+            text-decoration: none;
+            border-radius: 5px; 
+            transition: background-color 0.3s; 
+        }
+        .button:hover {
+            background-color: #7a1f3d; /* Darker maroon on hover */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWr-PCK5rAHD62A-m_CDlRj5TLPnUfxFyHA&s" length="80px" width="75px">
+    <h1>आरोग्यम् धनसंपदा</h1>
+</header>
+
+<nav>
+    <a href="C:\xampp\htdocs\Tanvi Project\design.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="paymentform.html">Payments</a>
+    <a href="Consultation.html">Consultation</a>
+    <a href="#Feedback">Feedback</a>
+    <a href="#about">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="admin_login.php">Admin Panel</a>
+    <a href="firstpage.html">Logout🥺</a>
+</nav>
+
+<h2 style="margin : 0px 10px 25px 25px"><center>Health Management And Information</center></h2>
+<h4 style="margin : 0px 10px 25px 25px"><marquee bgcolor="white">***Accessible, convenient, empowering, and lifesaving.***</marquee></h4>
+<div class="about-container">
+<a href="informationpage.html">
+  <img src="https://images.pexels.com/photos/806427/pexels-photo-806427.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Courier Image" class="about-image" >
+</a>
+  <p style="color:rgb(223, 52, 200);font-family:algerian;font-size:30px; margin: 1px 60px 1px 1px">
+<marquee behavior="slide" direction="up"  width="300px">✦आरोग्यम् धनसंपदा मध्ये आपले स्वागत आहे✦<br> तंदुरुस्त शरीर म्हणजे <br>खऱ्या संपत्तीची उगमभूमी.</marquee><br></p>
+<p align="justify" style="margin: 1px 60px 1px 1px" ><b>Your Partner in Health and Wellness.</b><br>
+➤24/7 Access to Reliable Health Resources: Get accurate information on symptoms, diseases, and treatments anytime, anywhere.<br>
+➤Easy Appointment Booking: Connect with trusted doctors and specialists near you in just a few clicks.<br>
+➤Personalized Health Tools: Use calculators for BMI, BMR, and more to track your fitness and wellness goals.<br>
+➤Medication and Health Reminders: Stay on top of your medications and health check-ups with smart notifications.<br>
+➤Secure and User-Friendly: Your data is safe with us. Experience a smooth and worry-free interface.</p>
+   </div>
+ </div>
+ <hr style="margin:0px 100px 0px 100px;" size="4"><br><br>
+ 
+<h2 style="margin : 0px 10px 25px 25px" align="center" style="color:rgb(101, 45, 99);font-family:algerian" ><mark>Benefits of HealthCare</mark></h2>
+<h3 style="margin : 0px 10px 25px 25px" align="center">**Wellness, efficiency, security, affordability, and personalization.**</h3>
+<section>
+<div class="benefits">
+<a href="BMI1.html">
+<img align="left" src="https://images.pexels.com/photos/6975469/pexels-photo-6975469.jpeg?auto=compress&cs=tinysrgb&w=600" alt="supply" width="350px" height="300px" ></a><br><br>
+<h2 align="center"><mark>&nbsp;&nbsp;&nbsp;Body Mass Index</mark></h2>
+<p align="justify">BMI helps detect potential health issues early. By identifying if someone is overweight or underweight, interventions like diet, exercise, or medical advice can be recommended to reduce long-term health complications.</p>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="benefits">
+<a href="BMR1.html">
+<img align="left" src="https://images.pexels.com/photos/601177/pexels-photo-601177.jpeg?auto=compress&cs=tinysrgb&w=600" alt="supply" width="350px" height="300px"></a>
+<h2 align="center"><mark>&nbsp;&nbsp;&nbsp;Basal Metabolic Rate</mark></h2>
+<p align="justify">BMR calculation is useful for determining the number of calories your body needs at rest, helping to manage weight effectively. It provides a foundation for creating personalized diet and exercise plans to maintain or improve overall health.</p>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="benefits">
+<a href="CarbohydrateIntake.html">
+<img align="left" src="https://images.pexels.com/photos/3219483/pexels-photo-3219483.jpeg?auto=compress&cs=tinysrgb&w=600" alt="supply" width="350px" height="300px"></a>
+<h2 align="center"><mark>&nbsp;&nbsp;&nbsp; Carbohydrate Intake </mark></h2>
+<p align="justify">A carbohydrate calculator helps users track and manage their carb intake by providing personalized daily recommendations based on factors like age and weight. simplifying meal planning for healthier eating. Eat healthy and stay healthy!</p>
+</div>&nbsp;&nbsp;&nbsp;
+<br>
+<div class="benefits">
+<a href="ClothingSizeCalculator.html">
+<img align="left" src="https://images.pexels.com/photos/6975538/pexels-photo-6975538.jpeg?auto=compress&cs=tinysrgb&w=600" alt="supply" width="350px" height="300px"></a>
+<h2 align="center"><mark>&nbsp;&nbsp;&nbsp;Clothing Size Calculator</mark></h2>
+<p align="justify">A clothing size calculator is a handy online tool designed to help individuals determine their ideal clothing size based on specific body measurements.A clothing size calculator can enhance confidence in online purchases and promote a more enjoyable shopping experience.</p>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="benefits">
+<a href="CaloriesBurn.html">
+<img align="left" src="https://images.pexels.com/photos/1172019/pexels-photo-1172019.jpeg?auto=compress&cs=tinysrgb&w=600" alt="supply" width="350px" height="300px"></a>
+<h2 align="center"><mark>&nbsp;&nbsp;&nbsp; Calories Burn</mark></h2>
+<p align="justify">Calorie burn is essential for maintaining a healthy weight by balancing the calories consumed and expended. It helps prevent lifestyle diseases like obesity, diabetes, and heart conditions by reducing excess body fat.</p>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="benefits">
+<a href="Menstrual .html">
+<img align="left" src="https://images.pexels.com/photos/5712298/pexels-photo-5712298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="supply" width="350px" height="300px"></a>
+<h2 align="center"><mark>&nbsp;&nbsp;&nbsp; Menstrual Cycle </mark></h2>
+<p align="justify">Menstrual calculation is important for understanding your cycle's regularity, which helps identify potential health issues like hormonal imbalances or reproductive concerns. It aids in family planning and tracking ovulation for those trying to conceive.</p>
+</div>&nbsp;&nbsp;&nbsp;
+<br>
+<center><a href="Othercalculators.html" class="button"><b>Other Calculators</b></a></center>
+<br>
+<hr style="margin:0px 100px 0px 100px;" size="4"><br><br>
+
+<hr style="margin:0px 100px 0px 100px;" size="4"><br><br>
+     <!----> 
+
+      <!--FeedBack Section Start from here-->
+<section id="Feedback">
+    <h2 style="margin : 0px 10px 25px 25px">Your Valueble feedback</h2>
+
+    <div style="display: flex; max-width: 800px; margin: 20px auto;">
+
+        <!-- Feedback Form Container -->
+        <div style="flex: 1; padding: 20px; background-color: #ffcccb; border-radius: 10px; margin-right: 20px;">
+            <h2 style="text-align: center; color: #800000;">Feedback Form</h2>
+            <form id="feedbackForm" method="POST" action="feedback.php">
+                <label for="name" style="display: block; margin-bottom: 5px; color: #800000;">Name:</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #e91e63; border-radius: 5px; box-sizing: border-box;">
+            
+                <label for="rating" style="display: block; margin-bottom: 5px; color: #800000;">Rating:</label>
+                <select id="rating" name="rating" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #e91e63; border-radius: 5px; box-sizing: border-box;">
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+            
+                <label for="feedback" style="display: block; margin-bottom: 5px; color: #800000;">Feedback:</label>
+                <textarea id="feedback" name="feedback" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #e91e63; border-radius: 5px; box-sizing: border-box;" rows="4"></textarea>
+            
+                <div id="errorMessage" style="color: red; margin-bottom: 15px; display: none;"></div>
+            
+                <button type="submit" style="width: 100%; padding: 10px; background-color: #d81b60; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+            </form>
+            
+        </div>
+
+    <script>
+        const feedbackList = [];
+    
+        function submitFeedback(event) {
+            event.preventDefault(); // Prevent the default form submission
+    
+            const name = document.getElementById('name').value;
+            const rating = document.getElementById('rating').value;
+            const feedback = document.getElementById('feedback').value;
+    
+            // Add feedback to the list
+            feedbackList.push({ name, rating, feedback });
+    
+            // Display feedback
+            displayFeedback();
+    
+            // Clear the form fields
+            document.getElementById('feedbackForm').reset();
+        }
+    
+        function displayFeedback() {
+            const feedbackListElement = document.getElementById('feedbackList');
+            feedbackListElement.innerHTML = ''; // Clear previous feedback
+    
+            feedbackList.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${item.name}</strong> (${item.rating} Stars): ${item.feedback}`;
+                li.style.marginBottom = '10px'; // Space between feedback items
+                feedbackListElement.appendChild(li);
+            });
+        }
+    </script>    
+    </section>
+
+    <hr style="margin:0px 100px 0px 100px;" size="4"><br><br>
+
+     <!--FeedBack Display -->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Customers!</title>
+</head>
+<body>
+    <h2 style="margin : 0px 10px 25px 25px">Previous Customer feedback</h2>
+<section id="customer-feedback" style="background-color: #fce4ec; padding: 40px 20px; text-align: center;">
+    <h2 style="font-size: 2em; margin-bottom: 20px; color: #800000;">What Our Customers Are Saying</h2>
+    <div class="feedback-container" style="display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative; max-width: 800px; margin: 0 auto;">
+        <div class="feedback-item" style="min-width: 300px; margin: 0 10px; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+            <h3 style="margin: 0; font-size: 1.5em; color: #800000;">Jane D.</h3>
+            <div class="rating" style="color: #FFD700; margin: 10px 0;">⭐⭐⭐⭐⭐</div>
+            <p style="font-size: 1em; color: #555;">"Amazing service! I loved the consultation and will definitely be back for next Zoom."</p>
+            <span class="date" style="font-size: 0.8em; color: #999;">October 1, 2023</span>
+        </div>
+        <div class="feedback-item" style="min-width: 300px; margin: 0 10px; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+            <h3 style="margin: 0; font-size: 1.5em; color: #800000;">John S.</h3>
+            <div class="rating" style="color: #FFD700; margin: 10px 0;">⭐⭐⭐⭐</div>
+            <p style="font-size: 1em; color: #555;">"Great Therapatic conversation. Highly recommend!"</p>
+            <span class="date" style="font-size: 0.8em; color: #999;">September 28, 2023</span>
+        </div>
+        <div class="feedback-item" style="min-width: 300px; margin: 0 10px; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+            <h3 style="margin: 0; font-size: 1.5em; color: #800000;">Emily R.</h3>
+            <div class="rating" style="color: #FFD700; margin: 10px 0;">⭐⭐⭐⭐⭐</div>
+            <p style="font-size: 1em; color: #555;">"Fantastic experience! The customer service was top-notch."</p>
+            <span class="date" style="font-size: 0.8em; color: #999;">September 25, 2023</span>
+        </div>
+        
+    </div>
+    <a href="#Feedback" style="text-decoration: none; margin-top: 20px; display: inline-block;">
+        <button class="Feedback" style="padding: 10px 20px; background-color: #800000; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+            Share Your Experience!
+        </button>
+    </a>
+</section>
+
+<script>
+    let currentIndex = 0;
+
+    function showFeedback(index) {
+        const feedbackItems = document.querySelectorAll('.feedback-item');
+        feedbackItems.forEach((item, i) => {
+            item.style.display = (i === index) ? 'block' : 'none';
+        });
+    }
+
+    function nextFeedback() {
+        const feedbackItems = document.querySelectorAll('.feedback-item');
+        currentIndex = (currentIndex + 1) % feedbackItems.length; // Loop back to the first item
+        showFeedback(currentIndex);
+    }
+
+    // Show the first feedback item initially
+    showFeedback(currentIndex);
+
+    // Change feedback every 5 seconds
+    setInterval(nextFeedback, 5000);
+</script>
+
+ <!--FeedBack Section End here-->
+    
+    <hr style="margin:0px 100px 0px 100px;" size="4"><br><br>
+<section id="about">
+<h2 style="margin : 0px 10px 25px 25px">About Us</h2>
+<h4 style="margin : 0px 10px 25px 25px">Accessible, convenient, empowering, and lifesaving.</h4>
+<p align="justify" style="margin: 1px 50px 1px 50px">Welcome to आरोग्यम् धनसंपदा, your trusted partner in managing and improving 
+    your health. We are committed to providing user-friendly tools and resources that empower individuals to take charge of their
+    well-being. Our platform offers advanced health calculators, including BMI and BMR, designed to help you make informed decisions
+    about your lifestyle and fitness goals. At आरोग्यम् धनसंपदा, we believe in simplifying health management by integrating innovation
+    and accessibility. Whether you’re starting your wellness journey or looking to maintain a healthy lifestyle, we’re here 
+    to support you every step of the way.
+    Take control of your health with us—because your well-being matters.
+    I Myself Tanvi and my co-founder Maya are always there to help our valueable users.
+</p>
+<br>
+<hr style="margin:0px 100px 0px 100px;" size="4"><br><br>
+</section>
+<footer>
+    <p>&copy; 2025 आरोग्यम् धनसंपदा. All rights reserved.</p>
+</footer>
+</body>
+</html>

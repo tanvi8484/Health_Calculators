@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fat Calculator</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Body Fat Calculator</h1>
+        <p>Use this calculator to estimate your body fat percentage based on your inputs.</p>
+        <form id="calculator">
+            <label for="weight">Weight (in kg):</label>
+            <input type="number" id="weight" required>
+
+            <label for="waist">Waist Circumference (in cm):</label>
+            <input type="number" id="waist" required>
+
+            <label for="age">Age (in years):</label>
+            <input type="number" id="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <button type="button" onclick="calculateBodyFat()">Calculate Body Fat</button>
+        </form>
+
+        <h2 id="result"></h2>
+
+        <div class="info">
+            <h3>Understanding Body Fat</h3>
+            <p>Body fat percentage is a measure of the amount of fat in your body relative to your total body weight. It is an important indicator of health and fitness.</p>
+            <p>Generally, a body fat percentage of:</p>
+            <ul>
+                <li>10-20% is considered healthy for men.</li>
+                <li>20-30% is considered healthy for women.</li>
+            </ul>
+            <p>Consult with a healthcare provider for personalized advice.</p>
+        </div>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+</html>

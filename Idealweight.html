@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Weight Calculator</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ideal Weight Calculator</h1>
+        <p>Use this calculator to estimate your ideal weight based on your height.</p>
+        
+        <form onsubmit="calculateIdealWeight(event);">
+            <label for="height">Enter your height (in cm):</label>
+            <input type="number" id="height" placeholder="Height in cm" required>
+            
+            <button type="submit">Calculate Ideal Weight</button>
+            
+            <h2 id="result"></h2>
+        </form>
+        
+        <div class="info">
+            <h3>Understanding Ideal Weight</h3>
+            <p>Your ideal weight can vary based on various factors including age, gender, and body composition. Generally, a healthy weight is important for overall health and can reduce the risk of chronic diseases.</p>
+            <p>Body Mass Index (BMI) is a common method used to assess whether you are in a healthy weight range. A BMI between 18.5 and 24.9 is considered normal. However, it is important to consult with a healthcare provider for a comprehensive assessment.</p>
+        </div>
+    </div>
+    <script src="script4.js"></script>
+</body>
+</html>

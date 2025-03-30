@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Age Calculator</title>
+    <link rel="stylesheet" href="style14.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Age Calculator</h1>
+        <p>Your fitness age is a measure of your physical fitness level compared to your chronological age. It takes into account factors like resting heart rate, exercise frequency, and overall health.</p>
+        
+        <div class="form-group">
+            <label for="age">Enter your Age (years):</label>
+            <input type="number" id="age" placeholder="Your age" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="restingHeartRate">Enter your Resting Heart Rate (bpm):</label>
+            <input type="number" id="restingHeartRate" placeholder="Resting Heart Rate" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="exerciseFrequency">How many times do you exercise per week?</label>
+            <input type="number" id="exerciseFrequency" placeholder="Times per week" required>
+        </div>
+        
+        <button id="calculate">Calculate Fitness Age</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script14.js"></script>
+</body>
+</html>

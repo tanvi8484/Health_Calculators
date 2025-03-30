@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #b3e0f2; /* Soft blue background */
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto; /* Center the form */
+            background: #a0204c; /* Maroon background */
+            padding: 30px;
+            border-radius: 20px;
+            color: #ffffff;
+            box-shadow: 0px 0px 10px rgb(5, 4, 4);
+        }
+
+        .containerbelow {
+            width: 90%;
+            max-width: 1200px;
+            background-color: rgb(144, 208, 229);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgb(254, 254, 254);
+            margin: 20px auto; /* Center the heading */
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #d5006d;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #d5006d;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c7005b;
+        }
+        .success-message {
+            display: none;
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Grid layout for buttons */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .button-box {
+            background-color: #890037;
+            border: 2px solid #1c0110;
+            border-radius: 20px;
+            padding: 20px;
+            transition: transform 0.2s, background-color 0.2s;
+            cursor: pointer;
+            max-width: 250px;
+            height: 350px;
+            text-align: center;
+        }
+
+        .button-box:hover {
+            transform: scale(1.05);
+            background-color: #ea4da1;
+        }
+
+        .button-box img {
+            width: 100%;
+            height: 80%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .button-box p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerbelow">
+        <h4>Book A Consultation</h4>
+        <hr>
+    </div>
+
+    <div class="container">
+        <form id="consultationForm" action="book_consultation.php" method="POST" onsubmit="return showSuccessMessage(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">Book Consultation</button>
+        </form>
+        <p class="success-message" id="successMessage">Consultation Booked Successfully!</p>
+    </div>
+
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault(); // Prevent form submission to see success message
+            document.getElementById("successMessage").style.display = "block";
+
+            // Optionally, you can submit the form after a delay
+            setTimeout(() => {
+                document.getElementById("consultationForm").submit();
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

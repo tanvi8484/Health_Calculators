@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrient Calculator</title>
+    <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nutrient Calculator</h1>
+        <p>Calculate your daily nutrient intake based on your food consumption.</p>
+        
+        <div class="input-group">
+            <label for="food">Food Item:</label>
+            <select id="food">
+                <option value="apple">Apple (52 cal, 0.3g protein, 14g carbs, 0.2g fat)</option>
+                <option value="banana">Banana (89 cal, 1.1g protein, 23g carbs, 0.3g fat)</option>
+                <option value="chicken">Chicken (165 cal, 31g protein, 0g carbs, 3.6g fat)</option>
+                <option value="rice">Rice (130 cal, 2.7g protein, 28g carbs, 0.3g fat)</option>
+                <option value="broccoli">Broccoli (55 cal, 3.7g protein, 11g carbs, 0.6g fat)</option>
+            </select>
+
+            <label for="quantity">Quantity (grams):</label>
+            <input type="number" id="quantity" placeholder="Enter quantity" min="1">
+        </div>
+
+        <button id="calculate">Calculate Nutrients</button>
+
+        <h2>Results</h2>
+        <div id="results"></div>
+
+        <h3>About Nutrients</h3>
+        <p>Nutrients are substances that provide nourishment essential for the maintenance of life and for growth. The main types of nutrients include:</p>
+        <ul>
+            <li><strong>Carbohydrates:</strong> The body's main source of energy.</li>
+            <li><strong>Proteins:</strong> Essential for building and repairing tissues.</li>
+            <li><strong>Fats:</strong> Important for hormone production and nutrient absorption.</li>
+            <li><strong>Vitamins and Minerals:</strong> Crucial for various body functions and processes.</li>
+        </ul>
+    </div>
+
+    <script src="script11.js"></script>
+</body>
+</html>

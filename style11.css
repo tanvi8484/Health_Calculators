@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    color: #4a148c; /* Dark maroon text */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    background-color: white; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the container */
+}
+
+h1 {
+    color: #d81b60; /* Pink color for the main heading */
+    text-align: center; /* Center the heading */
+}
+
+h2 {
+    color: #880e4f; /* Darker maroon for subheadings */
+    margin-top: 20px; /* Space above subheadings */
+}
+
+h3 {
+    color: #4a148c; /* Dark maroon for smaller headings */
+}
+
+p {
+    line-height: 1.6; /* Improve readability */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Space below input group */
+}
+
+label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 5px; /* Space below labels */
+    color: #4a148c; /* Dark maroon for labels */
+}
+
+select, input[type="number"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #e91e63; /* Pink border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 10px; /* Space below inputs */
+}
+
+button {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Padding inside button */
+    background-color: #d81b60; /* Pink button background */
+    color: white; /* White text for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+#results {
+    background-color: #f8bbd0; /* Light pink background for results */
+    padding: 10px; /* Padding inside results */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above results */
+    border: 1px solid #e91e63; /* Pink border for results */
+}

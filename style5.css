@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffeef8; /* Light pink background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #800000; /* Maroon color for headings */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #800000; /* Maroon color for labels */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ff99cc; /* Light pink border */
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d5006d; /* Dark pink/maroon button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c7005b; /* Slightly lighter maroon on hover */
+}
+
+.info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffe4f1; /* Very light pink background for info */
+    border-radius: 4px;
+    color: #800000; /* Maroon color for info text */
+}

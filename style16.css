@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b6c7d5;
+    color: #c391bb;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox to center the container */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.container {
+    width: 90%; /* Set a responsive width */
+    max-width: 1200px; /* Maximum width */
+    background-color: rgb(55, 25, 45);
+    border-radius: 15px; /* Rounded corners for the container */
+    padding: 20px; /* Add padding inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+h1 {
+    color: #e06fda;
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; /* Space between button boxes */
+    justify-items: center; /* Center items horizontally */
+}
+
+.button-box {
+    background-color: #d63aaf;
+    border: 2px solid #1c0110;
+    border-radius: 15px;
+    padding: 35px; /* Padding for button boxes */
+    transition: transform 0.2s, background-color 0.2s; /* Smooth transition for hover effects */
+    cursor: pointer;
+    width: 100%; /* Make button boxes take full width of grid cell */
+    max-width: 250px; /* Set a maximum width for button boxes */
+    height: 375px; /* Set height to maintain 2:3 aspect ratio (width: 250px, height: 375px) */
+}
+
+.button-box:hover {
+    transform: scale(1.05); /* Slightly smaller scale for a subtle effect */
+    background-color: #e8a4fd;
+}
+
+.button-box img {
+    width: 100%; /* Make the image responsive to the button box width */
+    height: 100%; /* Set height to fill the button box */
+    border-radius: 10px; /* Rounded corners for images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.button-box p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000000;
+}
